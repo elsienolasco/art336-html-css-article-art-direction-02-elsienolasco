@@ -5,11 +5,12 @@ Module Rules
 */
 
 .toggle-button {
-    animation: colorchange-font 5s linear 1s infinite alternate;
+    //animation: colorchange-font 5s linear 1s infinite alternate;
     color: $background-color;
     background-color: $color;
     display: inline-block;
     @include headline-font;
+    @include fontSize(30px);
     padding: 0 4px;
     text-decoration: none;
 }
@@ -22,7 +23,7 @@ nav[role="navigation"] ul a {
     border: 1px solid $color;
     color: $color;
     display: inline-block;
-    @include fontSize (16px);
+    @include fontSize (20px);
     @include headline-font;
     margin-left: 8px;
     padding: 0 4px;
@@ -39,20 +40,21 @@ nav[role="navigation"] ul a:hover {
 }
 
 header[role="banner"] {
-    animation: colorchange-font 5s linear 1s infinite alternate;
+    //animation: colorchange-font 5s linear 1s infinite alternate;
     background-color: $color;
     color: $background-color;
     padding: 12px;
 }
 
 header[role="banner"] h1 {
-    animation: colorchange-font 5s linear 1s infinite alternate;
+    //animation: colorchange-font 5s linear 1s infinite alternate;
     color: $background-color;
 }
 
 header[role="banner"] img {
+    border: 8px double $background-color;
     border-radius: 50%;
-    width: 75%;
+    width: 75%;       
 }
 
 header[role="banner"] p {
@@ -71,8 +73,8 @@ header[role="banner"] a:hover {
 }
 
 .contact svg {
-    width: 24px;
-    height: 24px;
+    width: 45px;
+    height: 45px;
 }
 
 .contact svg path {
@@ -88,12 +90,12 @@ header[role="banner"] a:hover {
 main[role="main"] h1 {
     background-color: $color;
     color: $background-color;
-    animation: colorchange-font 5s linear 1s infinite alternate;
+    //animation: colorchange-font 5s linear 1s infinite alternate;
     padding: 0 8px;
 }
 
 footer[role="contentinfo"] {
-    animation: colorchange-font 5s linear 1s infinite alternate;
+    //animation: colorchange-font 5s linear 1s infinite alternate;
     @include reversed-text;
     @include body-font-italic;
     line-height: 1;

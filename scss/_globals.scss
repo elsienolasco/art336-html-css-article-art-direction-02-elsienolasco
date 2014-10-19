@@ -10,10 +10,9 @@ Globals
 }
 
 // Site variable
-$color: #242424;
-$background-color: #beeaff;
+$color: #0D244C;
+$background-color: #EE6D58;
 $background-color-alternate: #d8c0ff;
-
 
 // Mixin that will include the fall back px declaration as well as the calculated rem value.
 @mixin fontSize($size) {
@@ -21,29 +20,66 @@ $background-color-alternate: #d8c0ff;
     font-size: calculateRem($size);
 }
 
+// Loading Google Fonts
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(http://fonts.gstatic.com/s/amaticsc/v6/IDnkRTPGcrSVo50UyYNK7xVuXpl7XtNjpLlhhhGlVqc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGN5zCZmJHbPt3vUI1beFfvf3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlPytCVloACqnDHJwh-em2k8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6KWfmYpLTwMIZXVESxMi2BMU24FapfJwyacJ6xNu5rm9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+
 @mixin body-font-regular {
-    font-family: "adelle", georgia, serif;
+    font-family: 'Source Sans Pro', helvetica, verdana, sans-serif;
     font-style: normal;
     font-weight: 300;
 }
 
 @mixin body-font-italic {
-    font-family: "adelle", georgia, serif;
+    font-family: 'Source Sans Pro', helvetica, verdana, sans-serif;
     font-style: italic;
     font-weight: 300;
 }
-
+    
 @mixin body-font-bold {
-    font-family: "adelle", georgia, serif;
+    font-family: 'Source Sans Pro', helvetica, verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin headline-font {
+    font-family: 'Amatic SC', cursive, helvetica, verdana, sans-serif;
     font-style: normal;
     font-weight: 700;
 }
 
-@mixin headline-font {
-    font-family: "cubano", helvetica, verdana, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-}
 
 @mixin reversed-text {
     background-color: $color;

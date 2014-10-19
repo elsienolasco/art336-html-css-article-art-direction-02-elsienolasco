@@ -28,14 +28,18 @@ $(document).ready(function(){
 $(function() {
     WebFont.load({
         custom: {
-            families: ['cubano'], // font-family name
+            families: ['Amatic SC'], // font-family name
             urls : ['css/main.css'] // url to css
         },
         active: function() {
             $('#banner-headline').bigtext();
-            $('#identity-headline').bigtext();
-            $('#typography-headline').bigtext();
-            $('#webapps-headline').bigtext();
+            //$('#vlogbrothers-headline').bigtext();
+            //$('#vidcon-headline').bigtext();
+            //$('#DFTBA-records-headline').bigtext();
+            //$('#sci-show-headline').bigtext();
+            //$('#crash-course-headline').bigtext();
+            //$('#2-D-glasses-headline').bigtext();
+            //$('#ecogeek-headline').bigtext(); 
         }
     });
 }); 
